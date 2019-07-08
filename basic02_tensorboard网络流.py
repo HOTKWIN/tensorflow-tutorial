@@ -56,5 +56,3 @@ with tf.Session() as sess:
         if i%50 == 0:
             result = sess.run(merged,feed_dict={xs:x_data,ys:y_data})
             writer.add_summary(result,i)
-
-
